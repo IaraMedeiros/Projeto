@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Amor</title>
+
+    <style>
+
+        body { background-color: rgb(247, 226, 246);
+        }
+
+        h1{font-size: 22px;
+        }
+
+        div.titlecaixa{ 
+            padding-top: 30px;
+            margin: auto;
+            align-items: center;
+            align-content: center;
+            width: fit-content;
+
+        }
+
+        div.divteste {
+            width: fit-content;
+            background-color: rgb(243, 155, 221);
+            height: fit-content;
+            align-items: center;
+            align-content: center;
+            margin: auto;
+            margin-top: 60px;
+            padding: 20px;
+            border-radius: 10%;
+            }
+
+        img{width: 100px;
+            padding: 0 20px;}
+
+        input{ 
+            width: 70px;
+        margin-bottom: 10px;
+        margin-top: 30px;}
+
+        p.caption{  margin: 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(180, 11, 33);
+        }
+
+        p.res{ 
+            font-weight: bold;
+            color: rgb(180, 11, 33);
+            font-size: 22px;
+            padding-top: 30px;
+            margin: auto;
+            align-items: center;
+            align-content: center;
+            width: fit-content;
+
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+  
+    <div class="titlecaixa">
+    <h1>Teste aqui o quanto eu te amo</h1></div>
+
+
+        <div class="divteste">
+        <p class="caption">Seu nome:</p><br>
+
+        <img src="https://purepng.com/public/uploads/medium/red-pixel-heart-vmx.png" alt=""><br>
+
+        <input type="text" name="nome" id="txtamor">
+    
+        <input type="button" value="Testar" onclick="calcular()">
+     <div id="res">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var txtv = document.querySelector('input#txtamor')
+            var res = document.querySelector('div#res')
+            var nome = String(txtv.value)
+            res.innerHTML = `Seu nome é ${nome}` }
+    </script>
+    
+</body>
+</html>
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    
+    <script>
+        function calcular(){
+            var txtv = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `Sua velocidade atual é de ${vel}`
+
+        }
+    </script>
+</body>
+</html>-->
